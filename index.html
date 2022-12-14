@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="asset/styles/style.css">
 </head>
 <body>
-    
+    <body>
+        <div id="container">
+      
+          <div id="contact_form_div">
+            <p id="contact_label"></p>
+            <h3>Scale Balancing</h3>
+            <p><input type="text" id="firstArray" placeholder="Enter only 2 Positive Elements">
+            </p>
+            <p><input type="text" id="secondArray" placeholder="Enter Positive Elements"></p>
+            <span style=color:red id=errorTextMsg></span>
+            <p><button type="submit" id="submit" onclick="Validate()"> Calculate</button></p>
+      
+            <label>Result</label>
+            <div id="result">
+              <p id="showResult"></p>
+            </div>
+          </div>
+        </div>
+        <div><label id="small-margin"><strong><u>Instruction:</u></strong> Insert 2 positive elements in the first input field and in the second input field enter a set of positive elements to get the balance!</label></div>
 
     <script src="asset/scripts/script.js"></script>
 </body>
