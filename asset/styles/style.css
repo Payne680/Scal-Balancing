@@ -1,76 +1,176 @@
-*{
-  box-sizing: border-box;
-}
-
 body {
-  background-color: grey;
-  padding-top: 10%;
-}
-.container {
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
   width: 100%;
-  margin: auto;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  background-color: rgb(164, 160, 160);
+}
+
+#container {
+  margin: 0 auto;
+  padding: 0px;
   text-align: center;
-}
-#header {
-  color: black;
-  margin-bottom: 20px;
+  width: 995px;
 }
 
-h2 {
-  text-align: center;
-}
-
-.element {
-  margin-bottom: 20px;
-  align-content: center;
-  text-align: center;
-}
-
-.element input {
-  box-sizing: border-box;
-  border-radius: 5px;
-  font-size: 20px;
-  color: rgb(8, 49, 8);
-  height: 35px;
-  max-width: 400px;
-}
-
-.element label {
-  font-size: 25;
-  color: brown;
-}
-
-.element small {
-  padding-left: 100px;
-}
-
-.error {
-  border: red;
-}
-
-#submit {
-  padding: 5px 10px;
-  font-size: 30px;
-  color: green;
-  background-color: greenyellow;
-}
-
-.out-con {
-  text-align: center;
-}
-#output {
-  width: 150px;
-  padding: 20px;
-  font-size: 35px;
-  background-color: orange;
-  color: purple;
-  text-align: center;
-  margin: auto;
+#container h3 {
   margin-top: 20px;
-  border-radius: 5px;
+  font-size: 45px;
+  color: #a9daf7;
 }
 
-.hide {
-  display: none;
+#container h1 p {
+  font-size: 18px;
+}
+
+#contact_form_div {
+  width: 390px;
+  margin-top: 20px;
+  margin-left: 310px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #7a7474;
+}
+
+#contact_form_div #contact_label {
+  margin: 15px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+#contact_form_div input[type="text"] {
+  width: 250px;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 17px;
+  padding-left: 5px;
+  border: none;
+}
+
+#contact_form_div button[type="submit"] {
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+  background-color: rgb(103, 101, 101);
+  border-bottom: 3px solid rgb(11, 1, 1);
+  color: #c2c7cb;
+  font-weight: bold;
+}
+
+#container label {
+  color: white;
+  font-size: 18px;
+}
+
+#result {
+  width: 250px;
+  height: 60px;
+  border-radius: 2px;
+  font-size: 17px;
+  padding-left: 15px;
+  margin-left: 70px;
+  border-radius: 4px;
+  background-color: whitesmoke;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 995px) {
+  #container {
+    width: 100%;
+  }
+
+  #container h1 {
+    font-size: 30px;
+  }
+
+  #contact_form_div {
+    width: 50%;
+    margin-left: 25%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #contact_form_div input[type="text"] {
+    width: 80%;
+  }
+
+  #contact_form_div textarea {
+    width: 80%;
+  }
+
+  #contact_form_div input[type="submit"] {
+    width: 80%;
+  }
+
+  #contact_form_div button[type="submit"] {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 699px) {
+  #container {
+    width: 100%;
+  }
+
+  #container h1 {
+    font-size: 30px;
+  }
+
+  #contact_form_div {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  #contact_form_div input[type="text"] {
+    width: 80%;
+  }
+
+  #contact_form_div textarea {
+    width: 80%;
+  }
+
+  #contact_form_div input[type="submit"] {
+    width: 80%;
+  }
+
+  #contact_form_div button[type="submit"] {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 399px) {
+  #container {
+    width: 100%;
+  }
+
+  #container h1 {
+    font-size: 25px;
+  }
+
+  #contact_form_div {
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #contact_form_div input[type="text"] {
+    width: 80%;
+  }
+
+  #contact_form_div textarea {
+    width: 80%;
+  }
+
+  #contact_form_div input[type="submit"] {
+    width: 80%;
+  }
+
+  #contact_form_div button[type="submit"] {
+    width: 80%;
+  }
 }
