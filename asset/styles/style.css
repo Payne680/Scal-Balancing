@@ -1,15 +1,12 @@
 body {
   margin: 0 auto;
-  
   text-align: center;
   width: 100%;
-  
   background-color: #a4a0a0;
 }
 
 #container {
   margin: 0 auto;
-  
   text-align: center;
   width: 995px;
 }
@@ -71,7 +68,6 @@ body {
 #result {
   width: 250px;
   height: 60px;
-  border-radius: 2px;
   font-size: 17px;
   padding-left: 15px;
   margin-left: 70px;
@@ -91,8 +87,6 @@ body {
   #contact-form-div {
     width: 50%;
     margin-left: 25%;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   #contact-form-div input[type="text"] {
@@ -110,6 +104,7 @@ body {
   #contact-form-div button[type="submit"] {
     width: 80%;
   }
+
 }
 
 @media only screen and (min-width: 400px) and (max-width: 699px) {
@@ -141,6 +136,7 @@ body {
   #contact-form-div button[type="submit"] {
     width: 80%;
   }
+
 }
 @media only screen and (min-width: 100px) and (max-width: 399px) {
   #container {
@@ -152,8 +148,6 @@ body {
   }
 
   #contact-form-div {
-    width: 90%;
-    margin-left: 5%;
     padding-left: 0px;
     padding-right: 0px;
   }

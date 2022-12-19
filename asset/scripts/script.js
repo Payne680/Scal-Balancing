@@ -1,10 +1,10 @@
 const Validate = () => {
     //At this point i just did the validation
-    document.getElementById("errorTextMsg").innerHTML = "";
-    const getFirstText = document.getElementById("firstArray").value;
-    const getSecondText = document.getElementById("secondArray").value;
+    document.getElementById("error-textMsg").innerHTML = "";
+    const getFirstText = document.getElementById("first-array").value;
+    const getSecondText = document.getElementById("second-array").value;
     if (getFirstText.length == 0 || getSecondText.length == 0) {
-      document.getElementById("errorTextMsg").innerHTML =
+      document.getElementById("error-textMsg").innerHTML =
         "Enter a value for the empty textbox    <br/>";
       return;
     }
@@ -17,7 +17,7 @@ const Validate = () => {
   
     for (i = 0; firstTextArray.length > i; i++) {
       if (typeof firstTextArray[i] != "number") {
-        document.getElementById("errorTextMsg").innerHTML =
+        document.getElementById("error-textMsg").innerHTML =
           "A non integer value was entered";
         return;
       }
@@ -25,13 +25,13 @@ const Validate = () => {
   
     for (i = 0; secondTextArray.length > i; i++) {
       if (typeof secondTextArray[i] != "number") {
-        document.getElementById("errorTextMsg").innerHTML =
+        document.getElementById("error-textMsg").innerHTML =
           "A non integer value was entered";
         return;
       }
     }
     if (firstTextArray.length != 2) {
-      document.getElementById("errorTextMsg").innerHTML =
+      document.getElementById("error-textMsg").innerHTML =
         "The first Textbox must be with just     2 digits <br/>";
       return;
     }
@@ -42,7 +42,7 @@ const Validate = () => {
     let firstSort = secondTextArray.includes(diff);
     if (firstSort == true) {
       let getLastValue = diff + minValue;
-      document.getElementById("showResult").innerHTML =
+      document.getElementById("show-result").innerHTML =
         "the output that will balance the scale is " +
         diff +
         " it will be added to " +
@@ -66,7 +66,7 @@ const Validate = () => {
       if (getrawSort.includes(diff)) {
         let index = getrawSort.indexOf(diff);
         secondResult = secondTextArray[index];
-        document.getElementById("showResult").innerHTML =
+        document.getElementById("show-result").innerHTML =
           "The two values are " + firstResult + " and " + secondResult;
   
         var finalResult = true;
@@ -74,7 +74,7 @@ const Validate = () => {
       }
     }
     if (finalResult != true) {
-      document.getElementById("showResult").innerHTML = "Scale Imbalanced";
+      document.getElementById("show-result").innerHTML = "Scale Imbalanced";
     }
   };
   
