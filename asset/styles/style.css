@@ -104,7 +104,6 @@ body {
   #contact-form-div button[type="submit"] {
     width: 80%;
   }
-
 }
 
 @media only screen and (min-width: 400px) and (max-width: 699px) {
@@ -136,8 +135,8 @@ body {
   #contact-form-div button[type="submit"] {
     width: 80%;
   }
-
 }
+
 @media only screen and (min-width: 100px) and (max-width: 399px) {
   #container {
     width: 100%;
@@ -145,11 +144,6 @@ body {
 
   #container h1 {
     font-size: 25px;
-  }
-
-  #contact-form-div {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   #contact-form-div input[type="text"] {
