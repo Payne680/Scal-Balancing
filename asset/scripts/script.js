@@ -1,4 +1,4 @@
-let Validate = () => {
+const Validate = () => {
   // At this point i just did the validation
   document.getElementById('error-textmsg').innerHTML = ''
   const getFirstText = document.getElementById('first-array').value
@@ -69,7 +69,7 @@ let Validate = () => {
       document.getElementById('show-result').innerHTML =
           'The two values are ' + firstResult + ' and ' + secondResult
 
-    const finalResult = true
+      const finalResult = true
       break
     }
   }
