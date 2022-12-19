@@ -1,10 +1,10 @@
 const Validate = () => {
   // At this point i just did the validation
-  document.getElementById('error-textMsg').innerHTML = ''
+  document.getElementById('error-textmsg').innerHTML = ''
   const getFirstText = document.getElementById('first-array').value
   const getSecondText = document.getElementById('second-array').value
   if (getFirstText.length == 0 || getSecondText.length == 0) {
-    document.getElementById('error-textMsg').innerHTML =
+    document.getElementById('error-textmsg').innerHTML =
         'Enter a value for the empty textbox    <br/>'
     return
   }
@@ -17,7 +17,7 @@ const Validate = () => {
 
   for (let i = 0; firstTextArray.length > i; i++) {
     if (typeof firstTextArray[i] !== 'number') {
-      document.getElementById('error-textMsg').innerHTML =
+      document.getElementById('error-textmsg').innerHTML =
           'A non integer value was entered'
       return
     }
@@ -25,13 +25,13 @@ const Validate = () => {
 
   for (let i = 0; secondTextArray.length > i; i++) {
     if (typeof secondTextArray[i] !== 'number') {
-      document.getElementById('error-textMsg').innerHTML =
+      document.getElementById('error-textmsg').innerHTML =
           'A non integer value was entered'
       return
     }
   }
   if (firstTextArray.length != 2) {
-    document.getElementById('error-textMsg').innerHTML =
+    document.getElementById('error-textmsg').innerHTML =
         'The first Textbox must be with just     2 digits <br/>'
     return
   }
