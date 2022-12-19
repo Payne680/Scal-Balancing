@@ -3,7 +3,7 @@ const Validate = () => {
   document.getElementById('error-textmsg').innerHTML = ''
   const getFirstText = document.getElementById('first-array').value
   const getSecondText = document.getElementById('second-array').value
-  if (getFirstText.length == 0 || getSecondText.length == 0) {
+  if (getFirstText.length === 0 || getSecondText.length === 0) {
     document.getElementById('error-textmsg').innerHTML =
         'Enter a value for the empty textbox    <br/>'
     return
@@ -30,7 +30,7 @@ const Validate = () => {
       return
     }
   }
-  if (firstTextArray.length != 2) {
+  if (firstTextArray.length !== 2) {
     document.getElementById('error-textmsg').innerHTML =
         'The first Textbox must be with just     2 digits <br/>'
     return
@@ -40,7 +40,7 @@ const Validate = () => {
   const minValue = Math.min.apply(null, firstTextArray)
   const diff = maxValue - minValue
   const firstSort = secondTextArray.includes(diff)
-  if (firstSort == true) {
+  if (firstSort === true) {
     const getLastValue = diff + minValue
     document.getElementById('show-result').innerHTML =
         'the output that will balance the scale is ' +
@@ -58,7 +58,7 @@ const Validate = () => {
     firstResult = secondTextArray[i]
     const SplicedList = secondTextArray
     const getrawSort = SplicedList.map(function (x) {
-      if (secondTextArray[i] != x) {
+      if (secondTextArray[i] !== x) {
         return x - secondTextArray[i]
       }
       return x
@@ -69,11 +69,11 @@ const Validate = () => {
       document.getElementById('show-result').innerHTML =
           'The two values are ' + firstResult + ' and ' + secondResult
 
-      var finalResult = true
+      let finalResult = true
       break
     }
   }
-  if (finalResult != true) {
+  if (finalResult !== true) {
     document.getElementById('show-result').innerHTML = 'Scale Imbalanced'
   }
 }
