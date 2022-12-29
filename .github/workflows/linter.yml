@@ -55,3 +55,14 @@ jobs:
           # Change to 'master' if your main branch differs
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          {
+            "threshold": 0,
+            "reporters": ["html", "markdown"],
+            "ignore": [
+              "**/node_modules/**",
+              "**/.git/**",
+              "**/*.md",
+              "**/myFolderToSkip/**"
+            ]
+          }
