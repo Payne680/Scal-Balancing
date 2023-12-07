@@ -1,3 +1,4 @@
+
 const Validate = () => {
   // At this point i just did the validation
   document.getElementById('error-textmsg').innerHTML = ''
@@ -77,3 +78,4 @@ const Validate = () => {
     document.getElementById('show-result').innerHTML = 'Scale Imbalanced'
   }
 }
+
